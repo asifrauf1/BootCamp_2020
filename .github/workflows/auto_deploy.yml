@@ -31,4 +31,4 @@ jobs:
     - name: Performing Surge Installation
       run: npm install --global surge
     - name: Performing deployment using surge
-      run: surge ./ bootcam_setup_AsifRauf.surge.sh ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ bootcam_setup_AsifRauf.surge.sh --token ${{ secrets.SURGE_TOKEN }}
